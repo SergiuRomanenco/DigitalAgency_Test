@@ -1,0 +1,178 @@
+/*Cerinta 4: Responsive Design (mobile)*/
+@media (max-width: 768px) {
+header nav div, .centrare {
+    display: none;
+}
+.bkg{
+  background-color: #3333339c;
+  padding: 1rem 0rem 0rem 0rem;
+}
+.logo{
+    width: 100%;
+}
+.container .fa-bars{
+  display: block;
+  font-size: 20px;
+}
+.mobile-menu{
+  display: block;
+  width: 100vw;
+  background-color: #33333300;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  
+}
+.mobile-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 0.6rem 1.3rem;
+}
+.mobile-menu a:hover{
+    background-color: white;
+    color: black;
+    width: 100vw;
+}
+.mobile-menu.hidden {
+  display: none;
+}
+
+.hero h2{
+  font-size: 50px;
+}
+
+.hero p{
+  margin-top: 12px;
+}
+
+.hero button{
+  margin-top: 30px;
+}
+
+/* Testimonial carousel responsive */
+  .carousel-slide {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .testimonial-box {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  .carousel-buttons button {
+  padding: 10px 8px;
+  font-size: 1.2rem;
+}
+
+#despreNoi{
+    display: flex;
+    background-color: #e5e5e5;
+    text-align: center;
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.bloc1-about{
+    width: 100%;
+}
+
+.bloc1-about img{
+    opacity: 30%;
+}
+
+.positionBloc2{
+  width: 0%;
+}
+
+.bloc2-about{
+    position: absolute;
+    width: 90%;
+    left: 20px;
+}
+
+.bloc2-about h2{
+  color: white;
+}
+
+.bloc2-about p{
+    color: white;
+}
+
+/*Footer*/
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-left .logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right .footer-form {
+  align-items: center;
+}
+
+.form-position{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-right label{
+  display: none;
+}
+
+.footer-center .footer-links{
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 15.5px;
+}
+
+.footer-links a{
+  font-family: 'Noto Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+}
+
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+  nav a {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+  .signin-button {
+    width: auto;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .testimonial-box {
+    padding: 1rem;
+  }
+
+  .carousel-dots {
+    gap: 6px;
+  }
+}

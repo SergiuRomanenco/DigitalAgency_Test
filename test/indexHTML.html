@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsiveStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./indexJavaScript.js"></script>
+
+</head>
+<body>
+
+    <!-- Header + Navigation -->
+    <!-- Cerinta 1: Header fix cu logo si menu -->
+    <header id="header">
+        <div class="container">
+            <h2 class="logo">Digital Agency</h2>
+            <nav>
+                <div>
+                    <a href="#acasa">Acasa</a>
+                    <a href="#testimoniale">Testimonale</a>
+                    <a href="#despre">Despre noi</a>
+                </div>
+            </nav>
+            <div class="centrare">
+                <div class="signin-button">
+                    <i class="fa fa-user"></i>
+                    <span style="font-family: 'Noto Sans', sans-serif; text-transform: uppercase; letter-spacing: 2px; font-size: 14px;">Sign In</span>
+                </div>
+            </div>
+            <i id="barsIcon" class="fa fa-bars"></i>
+        </div>
+        <div class="mobile-menu hidden">
+            <a href="#acasa">Acasa</a>
+            <a href="#testimoniale">Testimonale</a>
+            <a href="#despre">Despre noi</a>
+        </div>
+    </header>
+    
+
+    <!-- Sectiuni -->
+    <!-- Cerinta 2: Sectiunea "Despre Noi" cu animatie la scroll -->
+    <main>
+        <!-- Sectiune intro -->
+        <section id="acasa" class="hero">
+            <img src="./sources/bacground.jpg" alt="background">
+            <h2>Bine ai venit!</h2>
+            <p>Descopera mai multe despre noi si contacteaza-ne.</p>
+            <button id="ContactBtn">Contacteaza-ne</button>
+        </section>
+
+        <!-- Sectiune testimoniale -->
+        <section id="testimoniale" class="testimonials">
+        <h2 class="section-title">User <span style="color: #007bff;">Testimonials</span></h2>
+        <div class="carousel-container">
+            <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="testimonial-box">
+                <img src="./sources/614295203f913e42b8ff4520_capsule-video-testimonial-tips-header.jpg" alt="Angela Michael">
+                <h3>Angela Michael</h3>
+                <p>CEO Of Company</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing industry...</p>
+                </div>
+                <div class="testimonial-box">
+                <img src="./sources/istockphoto-1230749818-612x612.jpg" alt="Parvez Hossein">
+                <h3>Parvez Hossein</h3>
+                <p>CEO Of Company</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing industry...</p>
+                </div>
+                <div class="testimonial-box">
+                <img src="./sources/istockphoto-1961053928-612x612.jpg" alt="Shoikot Hasan">
+                <h3>Shoikot Hasan</h3>
+                <p>CEO Of Company</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Lorem Ipsum is simply dummy text of the printing industry...</p>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Samantha James">
+                <h3>Samantha James</h3>
+                <p>Marketing Lead</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Great collaboration and smooth communication...</p>
+                </div>
+                <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Daniel Kim">
+                <h3>Daniel Kim</h3>
+                <p>Product Manager</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>They delivered everything on time and with high quality...</p>
+                </div>
+                <div class="testimonial-box">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="John Lee">
+                <h3>John Lee</h3>
+                <p>UX Designer</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Creativity and professionalism at its best...</p>
+                </div>
+            </div>
+            </div>
+            <div class="carousel-buttons">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+            </div>
+            <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            </div>
+        </div>
+        </section>
+
+        <!-- Sectiunea "Despre noi" -->
+        <a name="despre"></a>
+        <div style="height: 100vh; display: flex; align-items: center;">
+            <section id="despreNoi" data-aos="fade-up">
+                <div class="bloc1-about">
+                    <img src="./sources/img2.jpg" alt="About Us">
+                </div>
+                <div class="positionBloc2">
+                    <div class="bloc2-about">
+                        <h2>Despre Noi</h2>
+                        <p>Lorem ipsum dolor sit amet  itaque error provident? itaque voluptates odio reprehenderit nemo nihil consequatur expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptate laudantium consequuntur quaerat quas optio tempore quos quidem, autem, recusandae magni dolores aliquid doloribus suscipit fugiat adipisci qui, temporibus beatae!</p>
+                        <button>Mai mult</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Cerinta 3: Popup cu formular de contact -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="margin-bottom: 10px;">Formular de Contact</h2>
+            <form>
+                <label for="name">Nume</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Mesaj:</label>
+                <textarea id="mesaj" rows="4" required></textarea>
+
+                <button type="submit">Trimite</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Logo stânga -->
+            <div class="footer-left">
+                <h2 class="logo">Digital Agency</h2>
+            </div>
+        
+            <!-- Linkuri navigație centru -->
+            <div class="footer-center">
+                <ul class="footer-links">
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#despre">Despre noi</a></li>
+                    <li><a href="#testimoniale">Testimoniale</a></li>
+                </ul>
+            </div>
+        
+            <!-- Formular email dreapta -->
+            <div class="footer-right">
+                <form class="footer-form">
+                    <div class="form-position">
+                        <label for="email">Abonează-te la newsletter:</label>
+                        <input type="email" id="email" placeholder="Introdu emailul tău" required>
+                        <button type="submit">Trimite</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pagina de prezentare. Toate drepturile rezervate.</p>
+            </div>
+        
+        </div>
+    </footer>
+
+    <!-- Scripturi -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+    });
+    </script>
+</body>
+</html>
